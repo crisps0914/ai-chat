@@ -31,7 +31,12 @@ export function IndexRoute() {
         <Container size="sm">
           <Badge mb="lg">GPT-4 Ready</Badge>
           <Text>
-            <Logo style={{ maxWidth: 240 }} />
+            <span>
+              <h1 style={{
+                maxWidth: 240,
+                color: "#3b5bdb",
+              }}>AI CHAT APP</h1>
+            </span>
           </Text>
           <Text mt={4} size="xl">
             Not just another ChatGPT user-interface!
@@ -72,7 +77,6 @@ export function IndexRoute() {
               <Button
                 component="a"
                 href="https://dl.todesktop.com/230313oyppkw40a"
-                // href="https://download.chatpad.ai/"
                 size="md"
                 variant="outline"
                 leftIcon={<IconCloudDownload size={20} />}

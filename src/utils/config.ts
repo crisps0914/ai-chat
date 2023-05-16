@@ -14,8 +14,7 @@ interface Config {
     allowDarkModeToggle: boolean;
     allowSettingsModal: boolean;
     allowDatabaseModal: boolean;
-    showTwitterLink: boolean;
-    showFeedbackLink: boolean;
+    showLinkedinLink: boolean;
 }
 
 interface AvailableModel {

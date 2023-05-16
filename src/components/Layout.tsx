@@ -18,7 +18,7 @@ import {
 } from "@mantine/core";
 import {
   IconBrandGithub,
-  IconBrandTwitter,
+  IconBrandLinkedin,
   IconDatabase,
   IconMessage,
   IconMoonStars,
@@ -63,9 +63,8 @@ export function Layout() {
     return db.chats.get(chatId);
   }, [chatId]);
 
-  const border = `${rem(1)} solid ${
-    theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[2]
-  }`;
+  const border = `${rem(1)} solid ${theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[2]
+    }`;
 
   useEffect(() => {
     setOpened(false);
@@ -90,15 +89,12 @@ export function Layout() {
               <Link
                 to="/"
                 className="app-region-no-drag"
-                style={{ marginTop: 10, padding: 4 }}
+                style={{ marginTop: 10, padding: 4, textDecoration: "none" }}
               >
-                <LogoText
-                  style={{
-                    height: 22,
-                    color: "#27B882",
-                    display: "block",
-                  }}
-                />
+                <h1 style={{
+                  height: 60,
+                  color: "#3b5bdb",
+                }}>AI CHAT</h1>
               </Link>
               <MediaQuery largerThan="md" styles={{ display: "none" }}>
                 <Burger
@@ -225,7 +221,7 @@ export function Layout() {
               <Tooltip label="Source Code">
                 <ActionIcon
                   component="a"
-                  href="https://github.com/deiucanta/chatpad"
+                  href="https://github.com/caioball914/ai-chat"
                   target="_blank"
                   sx={{ flex: 1 }}
                   size="xl"
@@ -233,37 +229,16 @@ export function Layout() {
                   <IconBrandGithub size={20} />
                 </ActionIcon>
               </Tooltip>
-              {config.showTwitterLink && (
-                <Tooltip label="Follow on Twitter">
+              {config.showLinkedinLink && (
+                <Tooltip label="Follow on Linkedin">
                   <ActionIcon
                     component="a"
-                    href="https://twitter.com/deiucanta"
+                    href="https://linkedin.com/caioball914"
                     target="_blank"
                     sx={{ flex: 1 }}
                     size="xl"
                   >
-                    <IconBrandTwitter size={20} />
-                  </ActionIcon>
-                </Tooltip>
-              )}
-              {config.showFeedbackLink && (
-                <Tooltip label="Give Feedback">
-                  <ActionIcon
-                    component="a"
-                    href="https://feedback.chatpad.ai"
-                    onClick={(event) => {
-                      if (window.todesktop) {
-                        event.preventDefault();
-                        window.todesktop.contents.openUrlInBrowser(
-                          "https://feedback.chatpad.ai"
-                        );
-                      }
-                    }}
-                    target="_blank"
-                    sx={{ flex: 1 }}
-                    size="xl"
-                  >
-                    <IconMessage size={20} />
+                    <IconBrandLinkedin size={20} />
                   </ActionIcon>
                 </Tooltip>
               )}

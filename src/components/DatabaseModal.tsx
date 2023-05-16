@@ -85,7 +85,7 @@ export function DatabaseModal({ children }: { children: ReactElement }) {
                 const blob = await db.export();
                 download(
                   blob,
-                  `chatpad-export-${new Date().toLocaleString()}.json`,
+                  `aichat-export-${new Date().toLocaleString()}.json`,
                   "application/json"
                 );
                 notifications.show({
