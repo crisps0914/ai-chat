@@ -1,5 +1,3 @@
-![AI CHAT](./banner.png)
-
 <h1 align="center">AI CHAT APP</h1>
 <h2 align="center">Premium quality UI for ChatGPT</h2>
 <p align="center"><a href="#">Web App</a> & <a href="https://dl.todesktop.com/230313oyppkw40a">Desktop App</a></p>
