@@ -3,13 +3,9 @@
   "private": true,
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "homepage": "https://caioball914.github.io/ai-chat",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "build:gh-pages": "rm -rf dist && parcel build index.html --public-url '/ai-chat' && mv dist/.git dist/ai-chat && git add --all && git commit -m 'Deploy to gh-pages' && git push origin gh-pages"
+    "build": "parcel build"
   },
   "staticFiles": {
     "staticPath": "src/static"
@@ -21,7 +17,6 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "buffer": "^5.7.1",
-    "gh-pages": "^5.0.0",
     "parcel": "^2.8.3",
     "parcel-reporter-static-files-copy": "^1.5.0",
     "path-browserify": "^1.0.1",
