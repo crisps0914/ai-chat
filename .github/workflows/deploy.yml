@@ -21,8 +21,8 @@ jobs:
         cache: 'npm'
     - name: Install rsync 📚
       run: |
-        apt-get update && apt-get install -y rsync
-    - run: npm run build
+        npm install
+        npm run build:gh-pages
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:

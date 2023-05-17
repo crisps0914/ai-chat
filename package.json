@@ -8,7 +8,8 @@
     "start": "parcel",
     "build": "parcel build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "build:gh-pages": "rm -rf dist && parcel build index.html --public-url '/ai-chat' && mv dist/.git dist/ai-chat && git add --all && git commit -m 'Deploy to gh-pages' && git push origin gh-pages"
   },
   "staticFiles": {
     "staticPath": "src/static"
