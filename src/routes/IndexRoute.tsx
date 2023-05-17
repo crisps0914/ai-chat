@@ -16,7 +16,6 @@ import {
   IconNorthStar,
 } from "@tabler/icons-react";
 import { useLiveQuery } from "dexie-react-hooks";
-import { Logo } from "../components/Logo";
 import { SettingsModal } from "../components/SettingsModal";
 import { db } from "../db";
 import { config } from "../utils/config";
