@@ -1,6 +1,7 @@
+![AI CHAT](./banner.png)
 <h1 align="center">AI CHAT APP</h1>
 <h2 align="center">Premium quality UI for ChatGPT</h2>
-<p align="center"><a href="#">Web App</a> & <a href="https://dl.todesktop.com/230313oyppkw40a">Desktop App</a></p>
+<p align="center"><a href="#">Web App</a></p>
 
 Recently, there has been a surge of UIs for ChatGPT, making it the new "to-do app" that everyone wants to try their hand at. AI chat sets itself apart with a broader vision - to become the ultimate interface for ChatGPT users.
 
