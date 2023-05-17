@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "predeploy": "npm run build",
+    "predeploy": "parcel build",
     "deploy": "gh-pages -d build"
   },
   "staticFiles": {
