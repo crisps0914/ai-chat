@@ -3,7 +3,7 @@
   "private": true,
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "homepage": "https://github.com/caioball914/ai-chat",
+  "homepage": "https://caioball914.github.io/ai-chat",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
