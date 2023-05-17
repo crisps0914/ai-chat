@@ -8,7 +8,7 @@
     "start": "parcel",
     "build": "parcel build",
     "predeploy": "npm run build",
-    "deploy": "gh-page -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "staticFiles": {
     "staticPath": "src/static"
