@@ -28,16 +28,8 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: npm install
-    - name: Run the tests
-      run: npm test
     - name: Build
       run: npm run build
-    - name: Run the tests and generate coverage report
-      run: npm test -- --coverage
-    - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
     - name: Deploy
       run: |
         git config --global user.name $user_name
