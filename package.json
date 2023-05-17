@@ -3,9 +3,12 @@
   "private": true,
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
+  "homepage": "https://github.com/caioball914/ai-chat",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "staticFiles": {
     "staticPath": "src/static"
@@ -18,8 +21,8 @@
     "@types/react-dom": "^18.0.11",
     "buffer": "^5.7.1",
     "parcel": "^2.8.3",
-    "path-browserify": "^1.0.1",
     "parcel-reporter-static-files-copy": "^1.5.0",
+    "path-browserify": "^1.0.1",
     "process": "^0.11.10"
   },
   "dependencies": {
@@ -40,6 +43,7 @@
     "downloadjs": "^1.4.7",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "gh-pages": "^5.0.0",
     "gpt-token-utils": "^1.2.0",
     "lodash": "^4.17.21",
     "nanoid": "^4.0.1",
