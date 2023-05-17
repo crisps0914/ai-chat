@@ -1,4 +1,4 @@
-![AI CHAT](./banner.png)
+![AI CHAT](./banner.jpg)
 <h1 align="center">AI CHAT APP</h1>
 <h2 align="center">Premium quality UI for ChatGPT</h2>
 <p align="center"><a href="#">Web App</a></p>
