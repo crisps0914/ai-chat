@@ -18,9 +18,7 @@ import {
 } from "@mantine/core";
 import {
   IconBrandGithub,
-  IconBrandLinkedin,
   IconDatabase,
-  IconMessage,
   IconMoonStars,
   IconPlus,
   IconSearch,
@@ -40,12 +38,6 @@ import { DatabaseModal } from "./DatabaseModal";
 import { Prompts } from "./Prompts";
 import { SettingsModal } from "./SettingsModal";
 import { config } from "../utils/config";
-
-declare global {
-  interface Window {
-    todesktop?: any;
-  }
-}
 
 export function Layout() {
   const theme = useMantineTheme();
@@ -228,19 +220,6 @@ export function Layout() {
                   <IconBrandGithub size={20} />
                 </ActionIcon>
               </Tooltip>
-              {config.showLinkedinLink && (
-                <Tooltip label="Follow on Linkedin">
-                  <ActionIcon
-                    component="a"
-                    href="https://linkedin.com/caioball914"
-                    target="_blank"
-                    sx={{ flex: 1 }}
-                    size="xl"
-                  >
-                    <IconBrandLinkedin size={20} />
-                  </ActionIcon>
-                </Tooltip>
-              )}
             </Center>
           </Navbar.Section>
         </Navbar>

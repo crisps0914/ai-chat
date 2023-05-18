@@ -10,11 +10,9 @@ interface Config {
     writingTones: string[];
     writingStyles: string[];
     writingFormats: WritingFormat[];
-    showDownloadLink: boolean;
     allowDarkModeToggle: boolean;
     allowSettingsModal: boolean;
     allowDatabaseModal: boolean;
-    showLinkedinLink: boolean;
 }
 
 interface AvailableModel {

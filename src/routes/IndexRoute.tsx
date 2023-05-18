@@ -72,17 +72,6 @@ export function IndexRoute() {
                 </Button>
               </SettingsModal>
             )}
-            {config.showDownloadLink && !window.todesktop && (
-              <Button
-                component="a"
-                href="https://dl.todesktop.com/230313oyppkw40a"
-                size="md"
-                variant="outline"
-                leftIcon={<IconCloudDownload size={20} />}
-              >
-                Download Desktop App
-              </Button>
-            )}
           </Group>
         </Container>
       </Center>
